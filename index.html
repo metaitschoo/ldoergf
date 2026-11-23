@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Academy | Zamonaviy IT Kasblarini O'rganing</title>
+  <meta name="description" content="Zamonaviy IT ta'lim markazi. Frontend, Backend, Mobil dasturlash, Kiberxavfsizlik va UI/UX dizayn kurslari. 0 dan professionalgacha.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </span>
+        <span class="logo-text">IT<span class="logo-accent">ACADEMY</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Asosiy</a></li>
+          <li><a href="#about" class="nav-link">Biz haqimizda</a></li>
+          <li><a href="#courses" class="nav-link">Kurslar</a></li>
+          <li><a href="#advantages" class="nav-link">Afzalliklar</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Aloqa</a></li>
+        </ul>
+        <div class="nav-cta-mobile">
+          <a href="#register" class="btn btn-primary btn-sm">Ro'yxatdan o'tish</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#register" class="btn btn-primary nav-cta-desktop">Ro'yxatdan o'tish</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menyu ochish">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero" id="home">
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+    
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="badge-pill">
+          <span class="badge-dot"></span>
+          <span>2026-yilgi yangi guruhlarga qabul ochiq</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Kelajak Kasbini Biz Bilan <span class="text-gradient">Professional</span> Darajada O'rganing
+        </h1>
+        
+        <p class="hero-desc">
+          0 dan boshlab xalqaro standartlar asosida amaliyotchi dasturchi bo'ling. 
+          Real loyihalar, sohada 5+ yillik tajribaga ega mentorlar va ishga joylashish imkoniyati.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#register" class="btn btn-primary btn-lg">
+            <span>Kursga Yozilish</span>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#courses" class="btn btn-secondary btn-lg">
+            <span>Kurslarni Ko'rish</span>
+          </a>
+        </div>
+
+        <div class="hero-badges">
+          <div class="hero-badge-item">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Bepul sinov darsi</span>
+          </div>
+          <div class="hero-badge-item">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Amaliy portfolio</span>
+          </div>
+          <div class="hero-badge-item">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>Xalqaro sertifikat</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="code-window">
+          <div class="code-header">
+            <div class="code-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="code-filename">student_journey.js</span>
+          </div>
+          <div class="code-body">
+            <pre><code><span class="token-keyword">const</span> student = {
+  name: <span class="token-string">"Siz"</span>,
+  passion: <span class="token-string">"IT Dasturlash"</span>,
+  level: <span class="token-string">"Beginner"</span>,
+  academy: <span class="token-string">"IT Academy"</span>
+};
+
+<span class="token-keyword">async function</span> <span class="token-fn">achieveDream</span>() {
+  <span class="token-keyword">await</span> student.<span class="token-fn">learnFundamentals</span>();
+  <span class="token-keyword">await</span> student.<span class="token-fn">buildRealProjects</span>();
+  <span class="token-keyword">await</span> student.<span class="token-fn">getCertified</span>();
+  
+  <span class="token-keyword">return</span> <span class="token-string">"🚀 Junior/Middle Developer!"</span>;
+}
+
+achieveDream();</code></pre>
+          </div>
+          <div class="code-floating-card card-1">
+            <span class="floating-icon">👨‍💻</span>
+            <div>
+              <div class="floating-title">1,200+ O'quvchi</div>
+              <div class="floating-sub">Muvaffaqiyatli bitirgan</div>
+            </div>
+          </div>
+          <div class="code-floating-card card-2">
+            <span class="floating-icon">💼</span>
+            <div>
+              <div class="floating-title">92% Natija</div>
+              <div class="floating-sub">Ishga joylashganlar</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS COUNTER ================= -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" data-target="1500">1,500+</div>
+          <div class="stat-label">Muvaffaqiyatli Bitiruvchilar</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="92">92%</div>
+          <div class="stat-label">Ish Bilan Ta'minlanish</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="25">25+</div>
+          <div class="stat-label">Amaliyotchi Mentorlar</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="50">50+</div>
+          <div class="stat-label">Hamkor Kompaniyalar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BIZ HAQIMIZDA (ABOUT) ================= -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Biz Haqimizda</span>
+        <h2 class="section-title">Nega Minglab Yoshlar Bizni Tanlamoqda?</h2>
+        <p class="section-desc">Biz shunchaki nazariya bermaymiz. Biz har bir o'quvchini zamonaviy IT bozorida raqobatbardosh mutaxassis qilib tayyorlaymiz.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-feature">
+          <div class="feature-icon bg-blue">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
+          <h3>Amaliy Loyihalar</h3>
+          <p>Har bir mavzu oxirida real loyiha ustida ishlaysiz va kurs yakunida shaxsiy portfolioga ega bo'lasiz.</p>
+        </div>
+
+        <div class="about-feature">
+          <div class="feature-icon bg-purple">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3>Kuchli Mentorlar</h3>
+          <p>Darslarni mahalliy va xorijiy yetakchi IT kompaniyalarda faoliyat yuritayotgan senior darajadagi mutaxassislar o'tadi.</p>
+        </div>
+
+        <div class="about-feature">
+          <div class="feature-icon bg-emerald">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <h3>Zamonaviy Coworking</h3>
+          <p>O'quvchilarimiz uchun 24/7 ochiq bo'lgan erkin ishlash muhiti, yuqori tezlikdagi internet va qulay sharoitlar mavjud.</p>
+        </div>
+
+        <div class="about-feature">
+          <div class="feature-icon bg-amber">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+          </div>
+          <h3>Karyera Markazi</h3>
+          <p>Rezyume tayyorlash, texnik intervyulardan o'tish bo'yicha maslahatlar va hamkor kompaniyalarga ishga tavsiya etish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= KURSLAR (COURSES) ================= -->
+  <section class="courses-section" id="courses">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Ta'lim Yo'nalishlari</span>
+        <h2 class="section-title">O'zingizga Mos Yo'nalishni Tanlang</h2>
+        <p class="section-desc">Har bir kurs bozordagi eng so'nggi texnologiyalar va amaliy talablarga moslashtirilgan o'quv dasturiga ega.</p>
+      </div>
+
+      <div class="courses-grid">
+        <!-- Kurs 1: Frontend -->
+        <div class="course-card">
+          <div class="course-header">
+            <div class="course-icon-wrap bg-blue-glow">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <span class="course-badge">Eng Ommabop</span>
+          </div>
+          <h3 class="course-title">Frontend Dasturlash</h3>
+          <p class="course-desc">Zamonaviy va interaktiv veb-saytlar hamda veb-ilovalarning ko'rinish qismini yaratishni o'rganing.</p>
+          <div class="course-tags">
+            <span class="tech-tag">HTML5 / CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">React.js</span>
+            <span class="tech-tag">Tailwind</span>
+          </div>
+          <div class="course-meta">
+            <div class="meta-item">
+              <span class="meta-label">Davomiyligi:</span>
+              <span class="meta-val">6 oy</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Daraja:</span>
+              <span class="meta-val">Noldan boshlab</span>
+            </div>
+          </div>
+          <button class="btn btn-outline btn-block select-course-btn" data-course="Frontend Dasturlash">
+            Kursga Yozilish
+          </button>
+        </div>
+
+        <!-- Kurs 2: Backend -->
+        <div class="course-card">
+          <div class="course-header">
+            <div class="course-icon-wrap bg-emerald-glow">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+            </div>
+            <span class="course-badge badge-green">Yuqori Maoshli</span>
+          </div>
+          <h3 class="course-title">Backend Dasturlash (Python)</h3>
+          <p class="course-desc">Serverlar, ma'lumotlar bazasi, murakkab tizim arxitekturasi va xavfsiz API'lar yaratish sirlari.</p>
+          <div class="course-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Django / FastAPI</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">REST API</span>
+          </div>
+          <div class="course-meta">
+            <div class="meta-item">
+              <span class="meta-label">Davomiyligi:</span>
+              <span class="meta-val">7 oy</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Daraja:</span>
+              <span class="meta-val">Noldan boshlab</span>
+            </div>
+          </div>
+          <button class="btn btn-outline btn-block select-course-btn" data-course="Backend Dasturlash (Python)">
+            Kursga Yozilish
+          </button>
+        </div>
+
+        <!-- Kurs 3: Foundation -->
+        <div class="course-card">
+          <div class="course-header">
+            <div class="course-icon-wrap bg-amber-glow">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <span class="course-badge badge-amber">Boshlang'ich</span>
+          </div>
+          <h3 class="course-title">IT Foundation (Dasturlash Asoslari)</h3>
+          <p class="course-desc">Kompyuter savodxonligi, C++ tili asoslari, mantiqiy fikrlash va algoritmlar bilan IT olamiga mustahkam kirish.</p>
+          <div class="course-tags">
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">Algoritmlar</span>
+            <span class="tech-tag">Mantiqiy fikrlash</span>
+            <span class="tech-tag">Git / GitHub</span>
+          </div>
+          <div class="course-meta">
+            <div class="meta-item">
+              <span class="meta-label">Davomiyligi:</span>
+              <span class="meta-val">3 oy</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Daraja:</span>
+              <span class="meta-val">Mutlaqo noldan</span>
+            </div>
+          </div>
+          <button class="btn btn-outline btn-block select-course-btn" data-course="IT Foundation">
+            Kursga Yozilish
+          </button>
+        </div>
+
+        <!-- Kurs 4: Mobil Dasturlash -->
+        <div class="course-card">
+          <div class="course-header">
+            <div class="course-icon-wrap bg-purple-glow">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+            </div>
+            <span class="course-badge badge-purple">Cross-Platform</span>
+          </div>
+          <h3 class="course-title">Mobil Dasturlash (Flutter)</h3>
+          <p class="course-desc">Bitta kod bazasi bilan ham Android, ham iOS uchun professional mobil ilovalar ishlab chiqishni o'rganing.</p>
+          <div class="course-tags">
+            <span class="tech-tag">Dart</span>
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">State Management</span>
+          </div>
+          <div class="course-meta">
+            <div class="meta-item">
+              <span class="meta-label">Davomiyligi:</span>
+              <span class="meta-val">6 oy</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Daraja:</span>
+              <span class="meta-val">Boshlang'ich</span>
+            </div>
+          </div>
+          <button class="btn btn-outline btn-block select-course-btn" data-course="Mobil Dasturlash (Flutter)">
+            Kursga Yozilish
+          </button>
+        </div>
+
+        <!-- Kurs 5: Kiberxavfsizlik -->
+        <div class="course-card">
+          <div class="course-header">
+            <div class="course-icon-wrap bg-red-glow">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <span class="course-badge badge-red">Talab Yuqori</span>
+          </div>
+          <h3 class="course-title">Kiberxavfsizlik (Ethical Hacking)</h3>
+          <p class="course-desc">Tizimlar xavfsizligini ta'minlash, zaifliklarni aniqlash, tarmoq himoyasi va xakerlik hujumlaridan himoyalanish.</p>
+          <div class="course-tags">
+            <span class="tech-tag">Linux / Kali</span>
+            <span class="tech-tag">Network Security</span>
+            <span class="tech-tag">Penetration Testing</span>
+          </div>
+          <div class="course-meta">
+            <div class="meta-item">
+              <span class="meta-label">Davomiyligi:</span>
+              <span class="meta-val">6 oy</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Daraja:</span>
+              <span class="meta-val">O'rta</span>
+            </div>
+          </div>
+          <button class="btn btn-outline btn-block select-course-btn" data-course="Kiberxavfsizlik">
+            Kursga Yozilish
+          </button>
+        </div>
+
+        <!-- Kurs 6: UI/UX Dizayn -->
+        <div class="course-card">
+          <div class="course-header">
+            <div class="course-icon-wrap bg-cyan-glow">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path></svg>
+            </div>
+            <span class="course-badge badge-cyan">Ijodiy Kasb</span>
+          </div>
+          <h3 class="course-title">UI/UX Dizayn</h3>
+          <p class="course-desc">Foydalanuvchilar uchun qulay, chiroyli va zamonaviy web hamda mobil ilovalar interfeysini loyihalash.</p>
+          <div class="course-tags">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">Wireframing</span>
+            <span class="tech-tag">Prototyping</span>
+            <span class="tech-tag">UX Research</span>
+          </div>
+          <div class="course-meta">
+            <div class="meta-item">
+              <span class="meta-label">Davomiyligi:</span>
+              <span class="meta-val">4 oy</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Daraja:</span>
+              <span class="meta-val">Noldan boshlab</span>
+            </div>
+          </div>
+          <button class="btn btn-outline btn-block select-course-btn" data-course="UI/UX Dizayn">
+            Kursga Yozilish
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= AFZALLIKLAR (ADVANTAGES) ================= -->
+  <section class="advantages-section" id="advantages">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nega Aynan Biz?</span>
+        <h2 class="section-title">O'quv Jarayonidagi Qulayliklar</h2>
+        <p class="section-desc">Biz har bir o'quvchining maksimal natijaga erishishi uchun to'liq sharoit yaratamiz.</p>
+      </div>
+
+      <div class="advantages-grid">
+        <div class="adv-card">
+          <div class="adv-num">01</div>
+          <h3>Zamonaviy Uskunalar</h3>
+          <p>Yuqori tezlikdagi kompyuterlar va kerakli dasturlar bilan jihozlangan qulay o'quv xonalari.</p>
+        </div>
+        <div class="adv-card">
+          <div class="adv-num">02</div>
+          <h3>Amaliyot & Internship</h3>
+          <p>Kursni muvaffaqiyatli tugatgan talabalar uchun mahalliy IT kompaniyalarda bepul amaliyot o'tash imkoniyati.</p>
+        </div>
+        <div class="adv-card">
+          <div class="adv-num">03</div>
+          <h3>Dars Yozuvlari</h3>
+          <p>Barcha o'tilgan darslarning video yozuvlari shaxsiy kabinetda saqlanadi — istalgan vaqtda qayta ko'rishingiz mumkin.</p>
+        </div>
+        <div class="adv-card">
+          <div class="adv-num">04</div>
+          <h3>Doimiy Qo'llab-quvvatlash</h3>
+          <p>Darsdan tashqari vaqtlarda ham o'rganishda yuzaga kelgan savollaringizga yordam beradigan yordamchi mentorlar (assistentlar).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ASOSIY JOYI: RO'YXATDAN O'TISH FORMASI ================= -->
+  <section class="register-section" id="register">
+    <div class="container">
+      <div class="register-wrapper">
+        <div class="register-info">
+          <span class="section-tag">A'zo Bo'lish</span>
+          <h2 class="register-title">IT Karerangizni Bugunoq Boshlang!</h2>
+          <p class="register-desc">
+            Ma'lumotlaringizni qoldiring. Administratorlarimiz 15 daqiqa ichida siz bilan bog'lanib, 
+            bepul ochiq darsga yozadilar va barcha savollaringizga javob beradilar.
+          </p>
+
+          <div class="register-benefits">
+            <div class="reg-benefit-item">
+              <div class="check-icon">✓</div>
+              <div>
+                <strong>Bepul sinov darsi</strong>
+                <p>Birinchi darsda mutlaqo bepul qatnashing va o'qituvchi bilan tanishing.</p>
+              </div>
+            </div>
+            <div class="reg-benefit-item">
+              <div class="check-icon">✓</div>
+              <div>
+                <strong>Darajani aniqlash testi</strong>
+                <p>Mutaxassisimiz sizga mos kurs va guruhni tanlashda yordam beradi.</p>
+              </div>
+            </div>
+            <div class="reg-benefit-item">
+              <div class="check-icon">✓</div>
+              <div>
+                <strong>Maxsus chegirmalar</strong>
+                <p>Ushbu sayt orqali ro'yxatdan o'tganlarga 20% gacha birinchi oylik chegirma.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="register-contact-mini">
+            <div class="contact-pill">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+998 (71) 200-00-00</span>
+            </div>
+            <div class="contact-pill">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Har kuni: 09:00 - 20:00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM KARTASI -->
+        <div class="register-card">
+          <div class="card-glow-header">
+            <h3>Ariza Qoldirish</h3>
+            <p>Ma'lumotlaringiz to'g'ridan-to'g'ri qabul bo'limiga yuboriladi</p>
+          </div>
+
+          <!-- Muvaffaqiyat yoki xatolik haqida xabar -->
+          <div id="formAlert" class="form-alert" style="display: none;"></div>
+
+          <form id="studentRegisterForm" novalidate>
+            <!-- 1. Ism -->
+            <div class="form-group">
+              <label for="firstName">
+                <span>Ism</span>
+                <span class="required">*</span>
+              </label>
+              <div class="input-wrapper">
+                <svg class="input-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <input 
+                  type="text" 
+                  id="firstName" 
+                  name="firstName" 
+                  placeholder="Masalan: Sardor" 
+                  required 
+                  autocomplete="given-name"
+                >
+              </div>
+              <span class="input-error-msg" id="firstNameError"></span>
+            </div>
+
+            <!-- 2. Familiya -->
+            <div class="form-group">
+              <label for="lastName">
+                <span>Familiya</span>
+                <span class="required">*</span>
+              </label>
+              <div class="input-wrapper">
+                <svg class="input-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <input 
+                  type="text" 
+                  id="lastName" 
+                  name="lastName" 
+                  placeholder="Masalan: Karimov" 
+                  required 
+                  autocomplete="family-name"
+                >
+              </div>
+              <span class="input-error-msg" id="lastNameError"></span>
+            </div>
+
+            <div class="form-row">
+              <!-- 3. Yosh -->
+              <div class="form-group form-col">
+                <label for="studentAge">
+                  <span>Yosh</span>
+                  <span class="required">*</span>
+                </label>
+                <div class="input-wrapper">
+                  <svg class="input-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  <input 
+                    type="number" 
+                    id="studentAge" 
+                    name="studentAge" 
+                    placeholder="Masalan: 19" 
+                    min="10" 
+                    max="80" 
+                    required
+                  >
+                </div>
+                <span class="input-error-msg" id="studentAgeError"></span>
+              </div>
+
+              <!-- 4. Yo'nalish -->
+              <div class="form-group form-col">
+                <label for="courseDirection">
+                  <span>Yo'nalish</span>
+                  <span class="required">*</span>
+                </label>
+                <div class="input-wrapper select-wrapper">
+                  <svg class="input-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                  <select id="courseDirection" name="courseDirection" required>
+                    <option value="" disabled selected>Yo'nalishni tanlang</option>
+                    <option value="Frontend Dasturlash">Frontend Dasturlash</option>
+                    <option value="Backend Dasturlash (Python)">Backend Dasturlash (Python)</option>
+                    <option value="IT Foundation">IT Foundation (Dasturlash asoslari)</option>
+                    <option value="Mobil Dasturlash (Flutter)">Mobil Dasturlash (Flutter)</option>
+                    <option value="Kiberxavfsizlik">Kiberxavfsizlik</option>
+                    <option value="UI/UX Dizayn">UI/UX Dizayn</option>
+                  </select>
+                </div>
+                <span class="input-error-msg" id="courseDirectionError"></span>
+              </div>
+            </div>
+
+            <!-- 5. Telefon Raqam -->
+            <div class="form-group">
+              <label for="phoneNumber">
+                <span>Telefon raqam</span>
+                <span class="required">*</span>
+              </label>
+              <div class="input-wrapper">
+                <svg class="input-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <input 
+                  type="tel" 
+                  id="phoneNumber" 
+                  name="phoneNumber" 
+                  placeholder="+998 (90) 123-45-67" 
+                  required 
+                  autocomplete="tel"
+                >
+              </div>
+              <span class="input-error-msg" id="phoneNumberError"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary btn-block btn-submit" id="submitBtn">
+              <span class="btn-text">Arizani Yuborish</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              <span class="btn-spinner" style="display: none;"></span>
+            </button>
+
+            <p class="form-privacy">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              Ma'lumotlaringiz xavfsizligi kafolatlanadi va uchinchi shaxslarga berilmaydi.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Savollaringiz Bormi?</span>
+        <h2 class="section-title">Ko'p Beriladigan Savollar</h2>
+        <p class="section-desc">O'quvchilarimizdan eng ko'p tushadigan savollarga aniq javoblar.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Dasturlashni o'rganish uchun noldan boshlasa bo'ladimi?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Ha, albatta! Kurslarimiz mutlaqo tajribaga ega bo'lmaganlar uchun mo'ljallangan. Dastlab eng oddiy tushunchalar va kompyuter asoslari o'rgatiladi, so'ngra bosqichma-bosqich murakkab mavzularga o'tiladi.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Kurs yakunida qanday sertifikat beriladi?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Kursni muvaffaqiyatli tamomlagan va barcha amaliy loyihalarni himoya qilgan talabalarga QR-kodli, xalqaro miqyosda tasdiqlangan rasmiy sertifikat taqdim etiladi.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Darslar qaysi kunlar va soatlarda o'tiladi?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Darslar haftasiga 3 kun (toq yoki juft kunlar) bo'lib o'tadi. Har bir dars 2 soat davom etadi. Ertalabki (09:00 - 11:00), kunduzgi (14:00 - 16:00) va kechki (18:30 - 20:30) guruhlarimiz mavjud.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>O'qish to'lovini bo'lib to'lash imkoniyati bormi?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Ha, to'lovni har oy bo'lib to'lashingiz mumkin. Shuningdek, to'liq kurs uchun oldindan to'lov qilinsa maxsus 15% chegirma amal qiladi.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Dars qoldirilsa mavzuni qanday o'zlashtirish mumkin?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Barcha darslarimiz video yozuvga olinadi va maxsus platformaga yuklanadi. Shuningdek, haftalik qo'shimcha yordamchi darslar va mentor bilan 1:1 savol-javob sessiyalari orqali mavzuni to'ldirib olishingiz mumkin.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ALOQA (CONTACT & LOCATION) ================= -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card-box">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Manzilimiz</h4>
+            <p>Toshkent shahri, Chilonzor tumani, Bunyodkor shoh ko'chasi, 42-uy (Metro: Mirzo Ulug'bek)</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Telefon Raqam</h4>
+            <p><a href="tel:+998712000000">+998 (71) 200-00-00</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div>
+            <h4>Telegram Kanal & Aloqa</h4>
+            <p><a href="https://t.me/itacademy_uz" target="_blank" rel="noopener">@itacademy_uz</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </span>
+            <span class="logo-text">IT<span class="logo-accent">ACADEMY</span></span>
+          </a>
+          <p class="footer-tagline">
+            Zamonaviy IT ta'lim maskani. O'zbekiston yoshlariga jahon standartidagi IT bilimlarini ulashamiz.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Sahifalar</h4>
+            <ul>
+              <li><a href="#home">Asosiy</a></li>
+              <li><a href="#about">Biz haqimizda</a></li>
+              <li><a href="#courses">Kurslar</a></li>
+              <li><a href="#advantages">Afzalliklar</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Kurslarimiz</h4>
+            <ul>
+              <li><a href="#courses">Frontend Dasturlash</a></li>
+              <li><a href="#courses">Backend (Python)</a></li>
+              <li><a href="#courses">Mobil Dasturlash</a></li>
+              <li><a href="#courses">Kiberxavfsizlik</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Ijtimoiy Tarmoqlar</h4>
+            <div class="social-links">
+              <a href="https://t.me" target="_blank" rel="noopener" class="social-btn" title="Telegram">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span>Telegram</span>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn" title="Instagram">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                <span>Instagram</span>
+              </a>
+              <a href="https://youtube.com" target="_blank" rel="noopener" class="social-btn" title="YouTube">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                <span>YouTube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 IT Academy. Barcha huquqlar himoyalangan.</p>
+        <p class="built-with">Faqat toza HTML, CSS va JavaScript yordamida yaratildi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SUCCESS MODAL POPUP ================= -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-card">
+      <div class="modal-icon-wrap">
+        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#10b981" stroke-width="3">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h3 class="modal-title">Arizangiz Qabul Qilindi!</h3>
+      <p class="modal-desc" id="modalStudentName">
+        Hurmatli o'quvchi, arizangiz Telegram kanalimizga muvaffaqiyatli yetib bordi. Tez orada mutaxassisimiz siz bilan bog'lanadi.
+      </p>
+      <div class="modal-info-box" id="modalSummary"></div>
+      <button class="btn btn-primary btn-block" id="modalCloseBtn">Tushunarli</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
